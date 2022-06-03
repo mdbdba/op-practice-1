@@ -1,0 +1,19 @@
+domain: databasedsolution.io
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: operator
+repo: github.com/mdbdba/op-practice-1
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: databasedsolution.io
+  group: op-practice-1
+  kind: SLOthHelper
+  path: github.com/mdbdba/op-practice-1/api/v1alpha1
+  version: v1alpha1
+version: "3"

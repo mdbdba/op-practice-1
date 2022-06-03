@@ -1,0 +1,6 @@
+apiVersion: op-practice-1.databasedsolution.io/v1alpha1
+kind: SLOthHelper
+metadata:
+  name: slothhelper-sample
+spec:
+  # TODO(user): Add fields here

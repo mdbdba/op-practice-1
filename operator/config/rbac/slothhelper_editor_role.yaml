@@ -1,0 +1,24 @@
+# permissions for end users to edit slothhelpers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: slothhelper-editor-role
+rules:
+- apiGroups:
+  - op-practice-1.databasedsolution.io
+  resources:
+  - slothhelpers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - op-practice-1.databasedsolution.io
+  resources:
+  - slothhelpers/status
+  verbs:
+  - get
